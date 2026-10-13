@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./.commandcode/hooks/git.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse" : [
+      {
+        "hooks": [
+          { 
+            "type": "command", 
+            "command": "./.commandcode/hooks/human-writes.sh" 
+          }
+        ]
+      }
+    ]
+  }
+}
